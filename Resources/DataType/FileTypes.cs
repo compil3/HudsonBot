@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace GioBot.Resources.DataType
+namespace Hudson.Resources.DataType
 {
     public class Settings
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GioBot.Resources.Settings
+namespace Hudson.Resources.Settings
 {
     public class ESettings
     {

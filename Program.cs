@@ -8,11 +8,11 @@ using Discord.WebSocket;
 using Discord.Commands;
 using Newtonsoft.Json;
 
-using GioBot.Resources.DataType;
-using GioBot.Resources.Settings;
+using Hudson.Resources.DataType;
+using Hudson.Resources.Settings;
 
 
-namespace GioBot
+namespace Hudson
 {
 
     class Program
@@ -91,7 +91,7 @@ namespace GioBot
 
             int ArgPos = 0;
 
-            if (!(Message.HasStringPrefix("a!", ref ArgPos) || Message.HasMentionPrefix(Client.CurrentUser, ref ArgPos))) return;
+            if (!(Message.HasStringPrefix(".", ref ArgPos) || Message.HasMentionPrefix(Client.CurrentUser, ref ArgPos))) return;
 
             var Result = await Commands.ExecuteAsync(Context, ArgPos, null);
             if (!Result.IsSuccess)

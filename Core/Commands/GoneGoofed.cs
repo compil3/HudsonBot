@@ -7,7 +7,7 @@ using Discord;
 using Discord.Commands;
 
 
-namespace GioBot.Core.Commands
+namespace Hudson.Core.Commands
 {
     public class GoneGoofed : ModuleBase<SocketCommandContext>
     {
@@ -18,7 +18,7 @@ namespace GioBot.Core.Commands
         }
 
         //displays embed stats.
-        [Command("embed"), Summary("Running count of fuck ups")]
+        [Command(".stats"), Summary("Running count of fuck ups")]
         public async Task Embeded()
         {
             EmbedBuilder builder = new EmbedBuilder();
